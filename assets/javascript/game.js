@@ -1,34 +1,25 @@
-//Storing Guesses/wins/Losses
+//Global Variables
 let winCount = 0 
 let loseCount = 0
 let guessCount = 9
-
+let winningNumberChoice = $("#guess-count");
+let letterChoices = ["a", "b", "c"]; //finish alphabet later
 //let guessCount = document.getElementById("guess-count")
 
 //Be able to click a key and generate a random number [1]//
 let userGuess = document.getElementById("user-guess");
 document.onkeyup = function(event) {
   userGuess.textContent = event.key;
-  console.log(userGuess)
-
-//generate the winning letter
-  function winningNumber() {
-    //winningNumberChoice is "guess-count"?
-    let winningNumberChoice = "guess-count";
-    let letterChoice = "abcdefghijklmnopqrstuvwxyz";
-    for (let i = 0; i < 1; i++)
-      winningNumberChoice = letterChoice.charAt(Math.floor(Math.random() * letterChoice.length));
-      return winningNumberChoice;
-  } 
-  console.log("winning number: " + winningNumber());
-  //renderGame(userGuess, winningNumberChoice);
+  
+  renderGame(event.key);
   
 };
 
 
 
 
-function renderGame(userGuess, winningNumberChoice) {
+function renderGuess(userGuess) {
+  winningNumberChoice = letterChoices.charAt(Math.floor(Math.random() * letterChoices.length));
   if (userGuess === winningNumberChoice) {
     return winCount++;
   } 
