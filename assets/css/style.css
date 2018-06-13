@@ -8,6 +8,7 @@ margin-right: 10px;
 text-align: center;
 background-color: rgb(40, 107, 55);
 color: white;
+padding: 10px;
 }
 
 h2 {
@@ -19,9 +20,10 @@ h2 {
 .subtext {
     text-align: center;
     color: white;
-    border: 5px solid rgb(14, 83, 14);
-    margin-left: 200px;
-    margin-right: 200px;
+    border: 3px solid rgb(14, 83, 14);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
     background-color: green;
     display: flex; 
     flex-direction: row;
@@ -32,9 +34,8 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
     align-items: center;
-    border: 5px solid rgb(14, 83, 14);
+    
     margin-left: 20px;
     margin-right: 20px;
 
@@ -51,11 +52,13 @@ h2 {
 }
 
 .scoreboard-row {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 100px;
-    font-size: 40px;
-    
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: left;
     
 }
 
@@ -66,7 +69,12 @@ body {
 
 
 .wrapper {
-    background-image: url("../../assets/images/background.jpg");
+    background-color: green;
+    padding: 30px 0px;
+    margin: 20px 100px;
+    width: 800px;
+    
+    
     
 
 }
@@ -82,5 +90,33 @@ body {
   }
 
   .directions {
-      padding: 4px;
+      padding: 20px;
+      background-color: white;
+      max-width: 800px;
+      
   }
+
+  .directions-row {
+    border: purple solid 3px;
+  }
+
+  .box {
+      padding: 10px;
+      border: 30px solid blue;
+  }
+
+  .wins {
+      background-color: blue;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+  }
+
+  .losses {
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+

@@ -6,6 +6,8 @@
     <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
 </head>
@@ -15,27 +17,33 @@
 <hr>
 <div class="wrapper">
 
+    <div class="row ">
+           <h3 class="directions directions-row">Directions: Choose any letter on your keyboard to guess the correct key.  If you get it right, you win a point, if you get it wrong, you lose a guess.  Lose 9 guesses you lose the game... and life. </h3>
+    </div>
+
     <div class="row">
-           <h3 class="directions">Directions: Choose any letter on your keyboard to guess the correct key.  If you get it right, you win a point, if you get it wrong, you lose a guess.  Lose 9 guesses you lose the game... and life. </h3>
+            <div class="col-sm-4 wins">
+                <h2>Wins: <span id="wins">0</span></h2>
+            </div>
+            <div class="col-sm-4 losses">
+                <h2>Losses: <span id="losses">0</span></h2>
+            </div>
     </div>
 
-    <div class="row win-lose-row">
-            <h2>Wins: <span id="winCount"> 0</span></h2>
-            <h2>Losses: <span id="winCount"> 0</span></h2>
-    </div>
-
-    <div class="row scoreboard-row">
-        <h2>Guesses Left: <span id="guess-count"> 9</span></h2>
-        <h2>Your Guesses So Far: <span id="user-guess"> *No Guesses*</span></h2>   
-    </div>
-
-    <div class="row scoreboard-row">
-            <h2>Total Guesses Made: <span id="total-guess"> _ _ _ _ _ _ _ _ _ </span></h2>   
+    <div class="row">
+        <div class="col-md-4 scoreboard-row">
+            <h2>Guesses Left: <span id="guesses-Left"></span></h2>
         </div>
+        <div class="col-md-4 scoreboard-row">    
+            <h2>Your Guesses So Far: <span id="guesses-so-far"> *No Guesses*</span></h2>   
+        </div>    
+    </div>   
 </div>
 
 <div class="footer">Want to become a licensed Psychic?  Take Your Skills to the Next level.</div>
-<script src="assets/javascript/game.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
