@@ -71,8 +71,8 @@ body {
 .wrapper {
     background-color: green;
     padding: 30px 0px;
-    margin: 20px 100px;
-    width: 800px;
+    margin: 20px auto;
+    max-width: 960px;
     
     
     
@@ -80,7 +80,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
